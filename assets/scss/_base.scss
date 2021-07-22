@@ -271,3 +271,68 @@ img.emoji {
   margin: 0 0.05em 0 0.1em;
   vertical-align: -0.1em;
 }
+
+
+
+.portfolio .portfolio-inner {
+  display: flex;
+  align-items: stretch;
+}
+
+.portfolio .portfolio-inner .portfolio-image {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  width: 45%;
+}
+
+.portfolio .portfolio-inner .portfolio-content {
+  flex: 1;
+}
+
+
+@media (max-width: 920px) {
+  .pc-sns-shares {
+    display: none;
+  }
+
+  .sp-sns-shares {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .portfolio .portfolio-inner {
+    display: block;
+  }
+
+  .portfolio .portfolio-inner .portfolio-image {
+    width: 100%;
+  }
+}
+
+
+
+img[src$='#center']
+{
+    display: block;
+    margin: 0.7rem auto; /* you can replace the vertical '0.7rem' by
+                            whatever floats your boat, but keep the
+                            horizontal 'auto' for this to work */
+    /* whatever else styles you fancy here */
+}
+
+img[src$='#floatleft']
+{
+    float:left;
+    margin: 0.7rem;      /* this margin is totally up to you */
+    /* whatever else styles you fancy here */
+}
+
+img[src$='#floatright']
+{
+    float:right;
+    margin: 0.7rem;      /* this margin is totally up to you */
+    /* whatever else styles you fancy here */
+}
